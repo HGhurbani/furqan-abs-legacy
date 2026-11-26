@@ -1,0 +1,36 @@
+<?php
+define("AIRLINEMANAGEMENT","Airline Management");
+define("ADDNEWAIRLINE","Add New Airline");
+define("AIRLINECODE","Airline Code");
+define("AIRLINENAME","Airline Name");
+define("ADDAIRLINE","Add Airline");
+define("BACKTOAIRLINE","Back To Airline");
+define("EDITAIRLINE","Edit Airline");
+define("UPDATEAIRLINE","Update Airline");
+define("AIRLINESEARCH","Airline No / Airline Name");
+define("AIRLINENAMEALREADYTAKEN","Airline Name is already taken");
+define("AIRLINENAMEEXIST","Airline Name already exits. Please use different name.");
+define('AIRLINEALPHA', "Alpha");
+define('AIRLINETYPE','Airline Type');
+define('ARAC','AR A/c');
+define("APAC","AP A/c");
+define('SUBAC','Sub A/c');
+define("XOCOMMISSION","Xo comm%");
+define("TKTCOMMISSION","Tkt comm%");
+define("GSACOMMISSION","GSA comm%");
+define("FARECODE","Fare Codes");
+define("OTHERDETAILS","Other Details");
+define("CODE","Code");
+define("FAREVALUE","Value");
+define("NAME","Name");
+define("DESIGNATION","Designation");
+define("MOBILE","Mobile");
+define("LANDPHONE","Land Phone");
+define("EMAIL","Email");
+define("ADDRESS","Address");
+define("AIRLINEDETAILS","Airline Details");
+define("NUMCODE","Num Code");
+define("ALPCODE","Alp Code");
+define("FINANCEENTRY","Finance Entry");
+define("SALESENTRY","Sales Entry");
+?>

@@ -1,0 +1,51 @@
+<?php
+define("USERACCESSMANAGEMENT","مستخدم الوصول إلى الإدارة");
+define("ADDNEWACCESS","إضافة جديد وصول المستخدم");
+define("USERACCESSNAME","المستخدم الدخول");
+define("ADDUSERACCESS","إضافة وصول المستخدم");
+define("BACKTOUSERACCESS","الظهر للوصول المستخدم");
+define("EDITUSERACCESS","تعديل وصول المستخدم");
+define("UPDATEUSERACCESS","تحديث وصول المستخدم");
+define("FILTERBYUSERACCESS","التصفية حسب وصول المستخدم");
+define("USERACCESSALREADYTAKEN","واتخذت بالفعل وصول المستخدم");
+define("USERACCESSEXIST","وصول المستخدم موجود بالفعل");
+define("USERROLEACCESS","وصول تفاصيل");
+define("USERROLEMODULE","وحدة");
+define("USERROLEMODULEACCESS","الوصول");
+define('USERTRANS',"المعاملات");
+define("USERROLEACCESS","وصول تفاصيل");
+define("USERROLEMODULE","وحدة");
+define("USERROLEMODULEACCESS","الوصول");
+define('USERTRANS',"المعاملات");
+define("USERTYPE","نوع المعاملة");
+define("USERCATEGORY","مستخدم الفئة");
+define('USERACCESS',"المستخدم الدخول");
+define('USERACCESSROLE',"دور المستخدم / المعاملات");
+
+define("USERROLEMANAGEMENT","دور إدارة المستخدم");
+define("ADDNEWUSERROLE","إضافة دور جديد");
+define("USERROLENAME","دور المستخدم");
+define("ADDUSERROLE","إضافة دور المستخدم");
+define("BACKTOUSERROLE","دعم لدور العضو");
+define("EDITUSERROLE","تعديل دور المستخدم");
+define("UPDATEUSERROLE","تحديث دور المستخدم");
+define("FILTERBYUSERROLE","تصفية حسب دور المستخدم");
+define("USERROLEALREADYTAKEN","واتخذت بالفعل دور المستخدم");
+define("USERROLEEXIST","دور المستخدم موجود بالفعل");
+
+define("USERSMANAGEMENT","إدارة المستخدمين");
+define("ADDNEWUSERS","إضافة مستخدمين جدد");
+define("USERSCODE","رمز المستخدم");
+define("USERSNAME","اسم");
+define("USERSPASSWORD","كلمة السر");
+define("CONFIRMUSERSPASSWORD","تأكيد كلمة السر");
+define("ADDUSERS","إضافة مستخدمين");
+define("BACKTOUSERS","دعم للمستخدمين");
+define("EDITUSERS","تحرير المستخدمين");
+define("UPDATEUSERS","تحديث المستخدمين");
+define("FILTERBYUSERS","تصفية حسب المستخدمين");
+define("USERSCODEALREADYTAKEN","واتخذت بالفعل رمز المستخدم");
+define("TYPENAME","نوع المستخدم");
+define("USERSNAMECODEROLE","اسم المستخدم / الرمز / الدور");
+define("USERDETAILS","تفاصيل المستخدم");
+?>

@@ -1,0 +1,52 @@
+<?php
+define("EMPDESMANAGEMENT","Designation Management");
+define("ADDNEWEMPDES","Add New Designation");
+define("EMPDESNAME","Designation");
+define("EMPDESCODE","Code");
+define("ADDEMPDES","Add Designation");
+define("BACKTOEMPDES","Back To Designation");
+define("EDITEMPDES","Edit Designation");
+define("UPDATEEMPDES","Update Designation");
+define("FILTERBYEMPDES","Filter By Designation");
+define("EMPDESALREADYTAKEN","Designation is already taken");
+define("EMPDESCODEALREADYTAKEN","Code is already taken");
+define("EMPDESEXIST","Designation already exist");
+
+define("EMPDOCMANAGEMENT","Document Management");
+define("ADDNEWEMPDOC","Add New Documents");
+define("EMPDOCNAME","Documents");
+define("ADDEMPDOC","Add Documents");
+define("BACKTOEMPDOC","Back To Documents");
+define("EDITEMPDOC","Edit Documents");
+define("UPDATEEMPDOC","Update Documents");
+define("FILTERBYEMPDOC","Filter By Documents");
+define("EMPDOCALREADYTAKEN","Document is already taken");
+define("EMPDOCEXIST","Document already exist");
+
+define("EMPMANAGEMENT","Employee Management");
+define("ADDNEWEMP","Add New Employee");
+define("EMPNAME","Employee");
+define("EMPDATE","Date");
+define("ADDEMP","Add Employee");
+define("BACKTOEMP","Back To Employee");
+define("EDITEMP","Edit Employee");
+define("UPDATEEMP","Update Employee");
+define("EMPMOBILE","Mobile");
+define("PARENTEMPDETAILS","Employee Details");
+define("EMPLOYEECODE","Employee Code");
+define("CONTACTNAME","Name");
+define("CONTACTPHONE","Phone");
+define("CONTACTMOBILE","Mobile");
+define("CONTACTEMAIL","Email");
+define("EMPLOANAC","Employee Loan A/c");
+define("EMPRECAC","Employee Receivable A/c");
+define("EMPSECTIONNAME","Section");
+define("EMPDETAILS","Employee Details");
+define("EMPPAGER","Pager");
+define("GALLILEOCD","Gallileo CD");
+define("AMADEUSCD","Amadeus CD");
+define("SABRE","Sabre");
+define("EMPCONTACT","Contact");
+define("DOCNUMBER","Document&nbsp;#");
+define("DUEDATE","Due Date");
+?>

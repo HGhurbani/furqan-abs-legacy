@@ -1,0 +1,52 @@
+<?php
+define("EMPDESMANAGEMENT","تعيين إدارة");
+define("ADDNEWEMPDES","إضافة تعيين جديد");
+define("EMPDESNAME","تعيين");
+define("EMPDESCODE","رمز");
+define("ADDEMPDES","إضافة تعيين");
+define("BACKTOEMPDES","دعم لتعيين");
+define("EDITEMPDES","تعديل تسمية");
+define("UPDATEEMPDES","تحديث التعيين");
+define("FILTERBYEMPDES","تصفية حسب تسمية");
+define("EMPDESALREADYTAKEN","واتخذت بالفعل تعيين");
+define("EMPDESEXIST","تسمية موجودة بالفعل");
+
+define("EMPDOCMANAGEMENT","وثيقة إدارة");
+define("ADDNEWEMPDOC","إضافة مستندات جديدة");
+define("EMPDOCNAME","وثائق");
+define("ADDEMPDOC","إضافة وثائق");
+define("BACKTOEMPDOC","العودة إلى الوثائق");
+define("EDITEMPDOC","تحرير مستندات");
+define("UPDATEEMPDOC","تحديث وثائق");
+define("FILTERBYEMPDOC","التصفية حسب وثائق");
+define("EMPDOCALREADYTAKEN","واتخذت بالفعل وثيقة");
+define("EMPDOCEXIST","وثيقة موجودة بالفعل");
+
+define("EMPMANAGEMENT","موظف الإدارة");
+define("ADDNEWEMP","إضافة موظف جديد");
+define("EMPNAME","عامل");
+define("EMPDATE","تاريخ");
+define("ADDEMP","إضافة موظف");
+define("BACKTOEMP","دعم لموظف");
+define("EDITEMP","تحرير موظف");
+define("UPDATEEMP","تحديث موظف");
+define("EMPMOBILE","المحمول");
+define("PARENTEMPDETAILS","موظف تفاصيل");
+define("EMPLOYEECODE","موظف قانون");
+define("CONTACTNAME","اسم");
+define("CONTACTPHONE","هاتف");
+define("CONTACTMOBILE","المحمول");
+define("CONTACTEMAIL","البريد الإلكتروني");
+define("EMPLOANAC","قرض موظف A / C");
+define("EMPRECAC","القبض موظف A / C");
+define("EMPSECTIONNAME","مقطع");
+define("EMPDETAILS","موظف تفاصيل");
+define("EMPPAGER","بيجر");
+define("GALLILEOCD","Gallileo CD");
+define("AMADEUSCD","أماديوس CD");
+define("SABRE","سيبر");
+define("EMPCONTACT","اتصل");
+define("EMPPAGER","بيجر");
+define("DOCNUMBER","توثيق&nbsp;#");
+define("DUEDATE","يرجع تاريخ");
+?>

@@ -1,0 +1,130 @@
+<?php
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4:             */
+// +----------------------------------------------------------------------+
+// | PHP version 4/5                                                      |
+// +----------------------------------------------------------------------+
+// | Copyright (c) 2004-2010 Qbicblack  Technologies                      |
+// +----------------------------------------------------------------------+
+// | This source file is a part of ABS Account Balancing Solution         |
+// +----------------------------------------------------------------------+
+// | Authors: programmers                                                 |
+// |                                                                      |
+// +----------------------------------------------------------------------+                                                     
+?>
+<script language="javascript1.1" type="text/javascript">
+    function checkAll()
+    {
+        if(document.getElementById('chkAll').checked==false)
+        {
+            uncheckAll();
+        }//end if
+        else
+        {
+            for (var i = 0; i < document.frmGroup.elements.length; i++)
+            {
+                var e = document.frmGroup.elements[i];
+                if (e.name == "del[]")
+                {
+                    e.checked = true;
+                }//end if
+            }//end for loop
+        }//end else
+    }//end function
+    function uncheckAll()
+    {
+        for (var i = 0; i < document.frmGroup.elements.length; i++)
+        {
+            var e = document.frmGroup.elements[i];
+            if (e.name == "del[]")
+            {
+                e.checked = false;
+            }//end if
+        }//end for loop
+    }//end function
+
+</script>
+<script src="<?php echo base_url();?>static/plugins/popup/popup.js" language="javascript1.1" type="text/javascript"></script>
+<link href="<?php echo base_url();?>static/plugins/popup/popup.css" type="text/css" rel="stylesheet">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entryForm">
+    <thead>
+    <tr>
+        <th align="left"><input type="checkbox" name="chkAll"  id="chkAll" onClick="checkAll();" class="check-all"/></th>
+        <th align="left">#</th>
+        <th align="left"><?php echo ACCYEARREF;?></th>
+        <th align="left"><?php echo ACCSTARTDATE;?></th>
+        <th align="left"><?php echo ACCENDDATE;?></th>
+        <th align="left"><?php echo ACCSTATUS;?></th>
+        <th align="left"><?php echo ACTION;?></th>
+    </tr>
+    </thead>
+
+    <tfoot>
+    <tr class="formButs">
+        <td colspan="7">
+            <?php if(!empty($list_value))
+        {
+            ?>
+            <div class="bulk-actions align-left">
+                <select name="ddlAction" id="ddlAction">
+                    <option value=""><?php echo BULKACTIONS;?></option>
+                    <option value="open"><?php echo ACCOPEN;?></option>
+                    <option value="closed"><?php echo ACCCLOSED;?></option>
+                    <?php if($this->session->userdata('AbsAdmin')==1): ?>
+                    <option value="delete"><?php echo DELETE;?></option>
+                    <?php endif;?>
+                </select>
+                <input type="submit" value="<?php echo APPLYACTION;?>" class="button" name="btnGo" id="btnGo"/>
+            </div>
+            <?php
+        }//end if
+            ?>
+        </td>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <?php $i= 1;?>
+    <?php foreach($list_value as $key=>$item):?>
+    <tr>
+        <input type="hidden" name="txtId" id="txtId" value="<?php echo $item->nId;?>" />
+        <td align="left"><input name="del[]" type="checkbox" id="del[]" value="<?php echo $item->nId;?>" class="chcktbl"/></td>
+        <td align="left"><?php echo $this->common_model->_offset+$i;?></td>
+        <td align="left"><?php echo stripslashes($item->vYearRef);?></td>
+        <td align="left"><?php echo stripslashes($item->dFDate);?></td>
+        <td align="left"><?php echo stripslashes($item->dTDate);?></td>
+        <td align="left"><?php if($item->vStatus == 'O') echo OPEN; else echo CLOSED; ?>
+            <?php /*if($item->vStatus == 'O')
+        {?>
+            <a href="<?php echo base_url();?>index.php/account_period/changeStatusOpen/<?php echo $this->uri->segment(3);?>/<?php echo $item->nId;?>">Open</a>
+            <?php }//end if
+        else {?>
+            <a href="<?php echo base_url();?>index.php/account_period/changeStatusClosed/<?php echo $this->uri->segment(3);?>/<?php echo $item->nId;?>">Close</a>
+            <?php } *///end else?>
+        </td>
+        <td align="left">
+            <?php // User Access aa
+            if($action_access->vAccess == 'F' || $action_access->vAccess == 'U'): ?>
+            <a href="<?php echo base_url();?>index.php/account_period/editAccountperiod/<?php echo $this->uri->segment(3).'/e/'.$item->nId;?>" title="<?php echo EDIT;?>"><img src="<?php echo base_url();?>static/images/pencil.png" alt="<?php echo EDIT;?>" border="0" /></a>
+            <?php endif; ?>
+            <?php //user access 
+            if($action_access->vAccess == 'F'): ?>
+            <a href="<?php echo base_url();?>index.php/account_period/delAcmEntry/<?php echo $this->uri->segment(3).'/'.$item->nId;?>" onClick="return confirm('<?php echo AREYOUSUREDELETE;?>');" title="<?php echo DELETE;?>"><img src="<?php echo base_url();?>static/images/cross.png" alt="Delete" border="0" /></a>
+            <?php endif;?>
+        </td>
+    </tr>
+        <?php $i = $i+1;?>
+        <?php endforeach;?>
+    <?php if(empty($list_value))
+    {
+        ?>
+    <tr>
+        <td colspan="7" align="center"><?php echo SORRYNORECORD;?></td>
+    </tr>
+        <?php }//end if
+    ?>
+    </tbody>
+</table>
+<div class="pagination">
+    <?php echo $this->common_model->p->show();?>
+</div> <!-- End .pagination -->
+<div class="clear"></div>

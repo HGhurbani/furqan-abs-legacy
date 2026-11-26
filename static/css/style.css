@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ZagBold';
+    src: url('fonts/zag_bold-webfont.eot');
+    src: url('fonts/zag_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/zag_bold-webfont.woff') format('woff'),
+         url('fonts/zag_bold-webfont.ttf') format('truetype'),
+         url('fonts/zag_bold-webfont.svg#ZagBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ZagRegular';
+    src: url('fonts/zag_regular-webfont.eot');
+    src: url('fonts/zag_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/zag_regular-webfont.woff') format('woff'),
+         url('fonts/zag_regular-webfont.ttf') format('truetype'),
+         url('fonts/zag_regular-webfont.svg#ZagRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /* -----------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------- COMMON -------------------------------------------------------*/
+
+body {
+	background:#fff; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6c6c6c; line-height:18px; padding:0px; margin:0px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{ 
+	display: block; 
+}
+h1, h2, h3, h4, h5, h6, ul, li, form{
+	margin:0; padding:0; 
+}
+h1, h2, h3, h4, h5, h6{
+	display:block; font-family:'ZagRegular', Arial, Helvetica, sans-serif; font-weight:normal; color:#6c6c6c; margin-bottom:10px;
+}
+h1{
+	font-size:28px; line-height:34px;
+}
+h2{
+	font-size:26px; line-height:28px;
+}
+h1, h2{
+	 margin-bottom:10px;
+}
+h3{
+	font-size:24px; line-height:26px;
+}
+h4{
+	font-size:20px; line-height:18px;
+}
+h5, h6{
+	font-size:18px; line-height:20px;
+}
+ul, li{
+	list-style-type:none; margin:0; padding:0;
+}
+li{line-height:16px; margin-bottom:10px; padding-left:20px;}
+li ul{
+	margin-top:10px;
+}
+img{
+	border:0px;
+}
+input, select, textarea{
+	font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6c6c6c; margin:0; padding:3px 8px;
+}
+p:first-child{
+	margin-top:0px;
+}
+p{
+	margin:0 0 15px;
+}
+a:link{
+	color:#3d3d3d; text-decoration:none;
+}
+a:visited{
+	color:#3d3d3d; text-decoration:none;
+}
+a:hover{
+	color:#3891bf; text-decoration:none;
+}
+a:active{
+	color:#3891bf; text-decoration:none;
+}
+a:focus{
+	outline:none;
+}
+*:focus{
+	outline:none;
+}
+::-moz-selection { background: #1b7dae; color: #fff; text-shadow: none; }
+::selection { background: #1b7dae; color: #fff; text-shadow: none; }
+ /*-----------------------------------------*/
+/*----------- Universal Items -------------*/
+span.mandatory, span.warning{
+	font-size:12px; color:#f00; font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.floatright{
+	float:right; margin:0 0 12px 12px;
+}
+.floatleft{
+	float:left; margin:0 12px 12px 0;
+}
+.lastBox{
+	margin-right:0px !important;
+}
+.highlight{
+	color:#3891bf; font-weight:bold;
+}
+ /*-----------------------------------*/
+/* --------- COMMON HACKS -----------*/
+.clearfix:after{
+	content:"."; display:block; height:0; font-size:0px; clear:both; visibility:hidden;
+}
+/* Hides from IE-mac \*/
+*:first-child+html .clearfix{height:1%;}
+* html .clearfix{height:1%;}
+/* End Hide from IE-mac */
+
+.clear{
+	height:1px;	line-height:1px; font-size:1px; display:block; clear:both;
+}
+ /* -------COMMON HACKS ends ---------*/
+/*-----------------------------------*/
+
+ /*------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------COMMON CONTAINERS & HOME PAGE---------------------------------------*/
+div.wrapper{
+	width:980px; margin:0 auto; height:auto;
+}
+div.navBg{
+	height:48px; background:#edeff0 url(../images/navbg.gif) center top repeat-x; 
+}
+div.navBg .wrapper{
+	position:relative;
+}
+div.navBg nav{
+	float:left;
+}
+nav#nav{
+	width:600px; height:48px;
+}
+nav#nav a, nav#nav a:visited{
+	color:#6c6c6c; background:url(../images/navbg.gif) center 48px no-repeat; line-height:18px; display:block; padding:15px 11px; float:left; margin-right:1px; display:inline;
+}
+nav#nav a:hover, nav#nav a.navActv, nav#nav a.navActv:visited, nav#nav a.navActv:hover{
+	color:#fff; background:#1b7dae url(../images/navbg.gif) center -48px repeat-x;
+}
+a.loginLink, a.loginLink:visited{
+	background:#fff; color:#118ec8; font-weight:bold; float:right; padding:4px 10px; margin-top:9px; border:solid 1px #e4e7e8; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+}
+#loginbox {
+	display:none;
+	background-color:#fff;
+	position:absolute;
+	width:210px;
+	z-index:100;
+	border:solid 1px #d4d7d8;
+	text-align:left;
+	padding:12px;
+	top: 47px; 
+	right: 0px; 
+	font-size:11px;
+}
+
+#loginbox input.txt {
+	display:block;
+	border:1px solid #dedede;
+	font-size:13px;
+	margin:0 0 5px;
+	padding:5px;
+	width:200px;
+}
+#loginbox p {
+	margin:0;
+}
+#loginbox label {
+	font-weight:normal;
+}
+#loginbox p.remember {
+	padding:10px 0;
+}
+#loginbox p.forgot, #loginbox p.complete {
+	clear:both;
+	margin:5px 0;
+}
+#login_submit {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background:#118ec8;
+	border:1px solid #39D;
+	color:#fff;
+	padding:4px 10px 5px;
+	font-size:11px;
+	margin:0 5px 0 0;
+	font-weight:bold;
+}
+#login_submit::-moz-focus-inner {
+padding:0;
+border:0;
+}
+#login_submit:hover, #login_submit:focus {
+	background-position:0 -5px;
+	cursor:pointer;
+}
+
+a.username, a.username:visited{
+	color:#118ec8; font-weight:bold; float:right;margin-top:12px; background:url(../images/down-arrow.gif) right center no-repeat; padding-right:12px;
+}
+#userinfo {
+	display:none;
+	background-color:#fff;
+	position:absolute;
+	width:210px;
+	z-index:100;
+	border:solid 1px #d4d7d8;
+	text-align:left;
+	padding:12px;
+	top: 47px; 
+	right: 0px; 
+	font-size:12px;
+}
+#userinfo strong{
+	display:block; margin-bottom:10px;
+}
+#userinfo a, #userinfo a:visited{
+	float:left;clear:left;
+}
+#userinfo a.logout{
+ background:#118ec8; padding:2px 5px; border:solid 1px #146894; margin-top:3px; color:#fff; 
+}
+div.logoStrip{
+	padding-top:33px; height:74px;
+}
+img.logo{
+	float:left;
+}
+.socIcons{
+	float:right; padding-top:5px;
+}
+.socIcons a{
+	margin-left:8px;
+}
+div.welcStrip{
+	background:url(../images/welcbg.gif) center bottom repeat-x; height:363px; clear:both;
+}
+div.welcTxt{
+	width:326px; height:190px; padding:143px 50px 30px 0; float:left; background:url(../images/welcrhtbg.gif) right bottom no-repeat; color:#fff;
+}
+div.welcTxt h2{
+	color:#fff;
+}
+div.bannerMain{
+	background:#e6e6e6 url(../images/banner-rhtbg.gif) 566px bottom no-repeat; padding-right:38px; width:566px; height:363px; float:right;
+}
+div.homeCont{
+	background:#e1e3e4 url(../images/homecontbg.gif) center top repeat-x; padding:32px 0 50px; line-height:16px;
+}
+section.management{
+	background:url(../images/management-icon.png) left top no-repeat; padding:0 38px 0 80px; width:258px; float:left;
+}
+section.latEvent{
+	background:url(../images/events-icon.png) left top no-repeat; padding:0 38px 0 80px; width:258px; float:left;
+}
+section.latEvent h4{
+	font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; margin-bottom:2px;
+}
+section.latEvent a, section.latEvent a:visited{
+	color:#6c6c6c;
+}
+section.latEvent a:hover, section.latEvent h4 a, section.latEvent h4 a:visited, section.latEvent h4 a:hover{
+	color:#3891bf;
+}
+span.eveDate{
+	font-size:11px; margin-bottom:3px;
+}
+img.hmeAdv{
+	float:right; margin-top:10px;
+}
+footer.foot{
+	background:url(../images/footerbg.gif) center top repeat-x; padding:30px 0 50px;
+}
+footer.foot nav{
+	float:left;
+}
+footer.foot nav a, footer.foot nav a:visited{
+	color:#6c6c6c; margin:0 2px;
+}
+footer.foot nav a:hover, footer.foot nav a.footActv, footer.foot nav a.footActv:visited, footer.foot nav a.footActv:hover{
+	color:#3891bf; text-decoration:none;
+}
+footer.foot div.copyright{
+	float:right; font-size:11px; text-align:right;
+}
+
+/* Inner Pages  */
+
+div.inrpagehead{
+	background:url(../images/innerpageheadbg.gif) center bottom repeat-x; height:204px;
+}
+div.pagehead{
+	width:326px; height:93px; padding:81px 50px 30px 0; float:left; background:url(../images/pageheadtxtbg.gif) right bottom no-repeat; color:#fff;
+}
+div.pagehead h2{
+	color:#fff;
+}
+
+div.bannerInner{
+	background:#e6e6e6 url(../images/banner-rhtbg.gif) 566px bottom no-repeat; padding-right:38px; width:566px; height:204px; float:right;
+}
+div.inrLftCol{
+	width:700px; float:left;
+}
+
+div.inrRhtCol{
+	width:230px; padding-left:20px; float:right;
+}
+
+div.inrRhtCol section.latEvent{
+	background:none; padding:0; width:auto; float:none; margin-bottom:15px;
+}
+
+/* Management */
+article.manageList{
+	margin-bottom:18px; padding-top:18px; border-top:solid 1px #d3d4d4;
+}
+aside.managePic{
+	width:114px; height:121px; float:left;
+}
+div.manageDet{
+	margin-left:140px; padding-top:0px;
+}
+div.manageDet h3{
+	font-size:20px; margin-bottom:5px; line-height:20px;
+}
+div.manageDet h5{
+	font-weight:normal; margin-bottom:5px; font-size:16px; color:#888;
+}
+
+/* Gallery */
+div.galCatg{
+	width:198px; height:auto; float:left; margin:0 12px 20px;
+}
+div.galCatg img{
+	border:solid 3px #fff; display:block; margin-bottom:10px;
+}
+div.galCatg a span{
+	display:block; font-size:18px; font-family:'ZagRegular', Arial, Helvetica, sans-serif;
+}
+
+/* Apply */
+
+div.applyForm{
+	background:#f8f8f8; padding:20px; border:solid 1px #dedede;
+}
+div.applyForm .fieldRow{
+	margin-bottom:10px; padding:4px 0; clear:both;
+}
+div.applyForm label{
+	width:124px; float:left; padding-top:4px;
+}
+div.applyForm input, div.applyForm select, div.applyForm textarea{
+	padding:5px 4px; width:360px;  border:solid 1px #d6d6d6;
+}
+div.applyForm input.secur{
+	width:200px; margin-right:10px; vertical-align:top;
+}
+div.applyForm input.button{
+	background:#0a5f92; color:#fff; padding:7px 10px; width:100px; font-weight:bold; margin-right:10px; border:0;
+}
+div.applyForm .rightCol{
+	margin-left:140px;
+}
+
+/* Events */
+
+div.inrLftCol section.latEvent{
+	background:none; padding:0; width:auto; float:none; margin-bottom:15px;
+}
+div.inrLftCol section.latEvent article{
+	margin-bottom:18px; padding-bottom:18px; border-bottom:solid 1px #d3d4d4;
+}
+div.inrLftCol section.latEvent h4{
+	font-family:'ZagRegular', Arial, Helvetica, sans-serif; font-size:18px; font-weight:normal; line-height:22px; color:#3891bf; margin-bottom:2px;
+}
+div.inrLftCol section.eventDet article{
+	margin-bottom:0px; padding-bottom:0px; border-bottom:none;
+}
+div.inrLftCol section.eventDet h4{
+	font-size:24px; line-height:28px;
+}
+
+
+/* Login */
+
+div.loginForm{
+	background:#f8f8f8; padding:20px; border:solid 1px #dedede; width:400px; margin:0 auto;
+}
+div.loginForm .fieldRow{
+	margin-bottom:0px; padding:4px 0; clear:both;
+}
+div.loginForm label{
+	width:124px; float:left; padding-top:4px;
+}
+div.loginForm input, div.loginForm select, div.loginForm textarea{
+	padding:5px 4px; width:240px;  border:solid 1px #d6d6d6;
+}
+div.loginForm input.chkbox{
+	width:auto;
+}
+div.loginForm input.secur{
+	width:200px; margin-right:10px; vertical-align:top;
+}
+div.loginForm input.button{
+	background:#0a5f92;  color:#fff; padding:7px 10px; width:100px; font-weight:bold; margin:8px 10px 0 0; border:0;
+}
+div.loginForm .rightCol{
+	margin-left:140px;
+}
+
+/*AFter Login */
+div.adminsechead{
+	background:#0b669a url(../images/adminsechead.gif) center top repeat-x; padding:18px;
+}
+div.adminsechead h2{
+	color:#fff;
+}
+div.loginRhtCol{
+	width:700px; float:right;
+}
+
+div.loginLftCol{
+	width:230px; float:left;
+}
+div.userLinks{
+	background:#f8f8f8; padding:15px 20px; border:solid 1px #dedede;
+}
+div.userLinks a, div.userLinks a:visited{
+	display:block; padding:5px 0; border-bottom:dotted 1px #cdcdcd;
+}
+

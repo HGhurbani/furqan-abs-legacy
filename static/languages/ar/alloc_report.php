@@ -1,0 +1,30 @@
+<?php
+define("ALLOCATIONREPORT","تقرير التخصيص");;
+define("ADDNEWREFUND","إضافة تسجيل جديد رد");
+define("ADDREFUND","إضافة سجل رددت");
+define("BACKTOREFUND","عودة برد سجل");
+define("RECEIVABLEALLOCATIONREPORT","تقرير تخصيص المستحق");
+define("PAYABLEALLOCATIONREPORT","تقرير تخصيص المستحقة");
+define("PAYABLERECONCILIATIONREPORT","تقرير المصالحة المستحقة");
+define("BSPRECONCILATIONREPORT","BSP المصالحة تقرير");
+define("BANKRECONCILATIONREPORT","المصالحة تقرير للبنك");
+define("AGEINGREPORT","شيخوخة تقرير");
+define("RECEIVABLEAGEING","شيخوخة المستحق");
+define("PAYABLEAGEING","شيخوخة المستحقة");
+define("RECEIVABLEWITHDETAILAGEING","القبض مع شيخوخة التفاصيل");
+define("PAYABLEWITHDETAILAGEING","تدفع مع شيخوخة التفاصيل");
+define("PARENTCUSTOMERAGEING","الأم شيخوخة العملاء");
+define("SUBAGENTAGEING","دون شيخوخة وكيل");
+define("EMPLOYEECUSTOMERAGEING","موظف شيخوخة العملاء");
+define("SUBAGENTWITHDETAILAGEING","دون وسيط مع شيخوخة التفاصيل");
+define("CASHBANKREGISTERY","CASH / BANK بالسجل");
+define("BUDGETREPORT","تقرير الميزانية");
+define("ACTUALBUDGETREPORT","تقرير الميزانية الفعلية");
+define("OPENINGBALANCE","الرصيد الافتتاحي");
+define("PROFITANDLOSS","الأرباح والخسائر");
+define("PLACCOUNTGROUPREPORT","P & L تقرير مجموعة الحساب");
+define("PLACCOUNTHEADREPORT","P & L حساب تقرير رئيس");
+define("MONTHLYPLREPORT","P & L التقرير الشهري");
+define("ARAPALLOCATION","AR / AP تخصيص");
+define("ALLOCATIONTYPE","نوع التخصيص");
+?>

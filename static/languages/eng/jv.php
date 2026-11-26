@@ -1,0 +1,34 @@
+<?php
+define("JVMANAGEMENT","Journal Voucher Management");
+define("ADDNEWJV","Add New Journal Voucher");
+define("EDITJV","Edit Journal Voucher");
+define("UPDATEJV","Update Journal Voucher");
+define("BACKTOJV","Back To Journal Voucher");
+define("JVDETAILS","Journal Voucher Details");
+define("DIVISIONNAMEORDOCNUMBER","Division / Doc Number");
+define("APPRDATE","Appr Date");
+define("APPRNUMBER","Appr #");
+define("JOURNALVOUCHERDETAILS","Journal Voucher Details");
+define("SYSTEMJVMANAGEMENT","System jv Management");
+define("ADDNEWSYSYSTEMJV","Add New System Jv");
+define("EDITSYSYSTEMJV","Edit System Jv");
+define("UPDATESYSYSTEMJV","Update System Jv");
+define("BACKTOSYSYSTEMJV","Back To System Jv");
+define("SYSYSTEMJVDETAILS","System Jv Details");
+define("JVNUMBER","Jv Number");
+define("DATABASEBACKUP","Database Backup");
+define("CREATEBACKUP","Create Backup");
+define("CREATENEWBACKUP","Create New Backup");
+define("VCH","VCH");
+define("CONF","Conf");
+define("RECURRINGJV","Recurring Jv");
+define("ADDNEWRECURRINGJV","Add New Recurring Jv");
+define("BACKTORECURRINGJV","Back To Recurring JV");
+define("TRXTYPE","TRX Type");
+define("STARTDATE","Start Date");
+define("FREQUENCY","Frequency");
+define("NOOFJV","Number of Jv");
+define("ENDDATE","End Date");
+define("DOWNLOAD","Download");
+define("GENERATE","Generate");
+?>

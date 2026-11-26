@@ -1,0 +1,36 @@
+<?php
+define("AIRLINEMANAGEMENT","الطيران إدارة");
+define("ADDNEWAIRLINE","إضافة شركة طيران جديدة");
+define("AIRLINECODE","شركة طيران قانون");
+define("AIRLINENAME","اسم شركة الطيران");
+define("ADDAIRLINE","إضافة طيران");
+define("BACKTOAIRLINE","عودة إلى طيران");
+define("EDITAIRLINE","تحرير طيران");
+define("UPDATEAIRLINE","تحديث طيران");
+define("AIRLINESEARCH","اسم شركة الطيران رقم / طيران");
+define("AIRLINENAMEALREADYTAKEN","واتخذت بالفعل اسم شركة الطيران");
+define("AIRLINENAMEEXIST","اسم شركة الطيران مخارج بالفعل. الرجاء استخدام اسم مختلف.");
+define('AIRLINEALPHA', "ألفا");
+define('AIRLINETYPE','الخطوط الجوية نوع');
+define('ARAC','AR A / C');
+define("APAC","AP A / C");
+define('SUBAC','دون A / C');
+define("XOCOMMISSION","Xo  بالاتصالات٪");
+define("TKTCOMMISSION","TKT بالاتصالات٪");
+define("GSACOMMISSION","GSA  بالاتصالات٪");
+define("FARECODE","رموز أجرة");
+define("OTHERDETAILS","تفاصيل أخرى");
+define("CODE","رمز");
+define("FAREVALUE","قيمة");
+define("NAME","اسم");
+define("DESIGNATION","تعيين");
+define("MOBILE","متنقل");
+define("LANDPHONE","الأراضي الهاتف");
+define("EMAIL","البريد الإلكتروني");
+define("ADDRESS","عنوان");
+define("AIRLINEDETAILS","الخطوط الجوية تفاصيل");
+define("NUMCODE","كود الأسطوانات");
+define("ALPCODE","ALP الرمز");
+define("FINANCEENTRY","دخول التمويل");
+define("SALESENTRY","دخول المبيعات");
+?>

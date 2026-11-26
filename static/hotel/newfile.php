@@ -1,0 +1,1 @@
+<?php function getHotelTickets(){$Valid_Tkt_no ='[]'; return ($Valid_Tkt_no);} ?>

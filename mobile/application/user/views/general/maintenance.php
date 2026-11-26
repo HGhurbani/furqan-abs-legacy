@@ -1,0 +1,22 @@
+<?php
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4:             */
+// +----------------------------------------------------------------------+
+// | PHP version 4/5                                                      |
+// +----------------------------------------------------------------------+
+// | Copyright (c) 2004-2010 Qbicblack  Technologies                      |
+// +----------------------------------------------------------------------+
+// | This source file is a part of ABS Account Balancing Solution         |
+// +----------------------------------------------------------------------+
+// | Authors: programmers                                                 |
+// |                                                                      |
+// +----------------------------------------------------------------------+                                                     
+?>
+<?php //$this->load->view('general/banner3');?><center>
+	<div class="homeCont">
+	 <div class="wrapper">
+        	<section>
+           	  <h3 class="content-box-header"><?php echo $this->showTitle;?></h3>
+            </section>
+	<?php echo $this->common_model->LookUpDisplay('Maintenance');?>
+	</div>
+    </div>	</center>

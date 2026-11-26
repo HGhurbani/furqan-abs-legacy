@@ -1,0 +1,34 @@
+<?php
+define("JVMANAGEMENT","مجلة إدارة قسيمة");
+define("ADDNEWJV","إضافة جديدة مجلة قسيمة");
+define("EDITJV","تحرير مجلة قسيمة");
+define("UPDATEJV","تحديث مجلة قسيمة");
+define("BACKTOJV","عودة إلى قسائم اليومية");
+define("JVDETAILS","تفاصيل مجلة قسيمة");
+define("DIVISIONNAMEORDOCNUMBER","قسم / شعبة رقم");
+define("APPRDATE","Appr تاريخ");
+define("APPRNUMBER","Appr #");
+define("JOURNALVOUCHERDETAILS","تفاصيل مجلة قسيمة");
+define("SYSTEMJVMANAGEMENT","نظام إدارة JV");
+define("ADDNEWSYSYSTEMJV","إضافة نظام جديد JV");
+define("EDITSYSYSTEMJV","تحرير نظام JV");
+define("UPDATESYSYSTEMJV","تحديث النظام JV");
+define("BACKTOSYSYSTEMJV","عودة إلى نظام JV");
+define("SYSYSTEMJVDETAILS","نظام JV تفاصيل");
+define("JVNUMBER","عدد JV");
+define("DATABASEBACKUP","قاعدة بيانات النسخ الاحتياطي");
+define("CREATEBACKUP","إنشاء النسخ الاحتياطي");
+define("CREATENEWBACKUP","إنشاء نسخة احتياطية جديدة");
+define("VCH","VCH");
+define("CONF","أسيوط");
+define("RECURRINGJV","JV التكراري");
+define("ADDNEWRECURRINGJV","إضافة JV التكراري");
+define("BACKTORECURRINGJV","العودة الى المتكررة JV");
+define("TRXTYPE","TRX نوع");
+define("STARTDATE","بدء التسجيل");
+define("FREQUENCY","تردد");
+define("NOOFJV","عدد JV");
+define("ENDDATE","تاريخ انتهاء");
+define("DOWNLOAD","تحميل");
+define("GENERATE","توليد");
+?>

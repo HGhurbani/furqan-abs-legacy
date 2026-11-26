@@ -1,0 +1,35 @@
+<?php
+define("CUSTMANAGEMENT","إدارة العملاء");
+define("ADDNEWCUST","إضافة عميل جديد");
+define("CUSTNAME","زبون");
+define("CUSTDATE","تاريخ");
+define("ADDCUST","إضافة العملاء");
+define("BACKTOCUST","دعم للعملاء");
+define("EDITCUST","تحرير العملاء");
+define("UPDATECUST","تحديث العملاء");
+define("CUSTMOBILE","المحمول");
+define("CUSTCIVILID","البطاقة المدنية");
+define("CUSTSERVCALC","خدمة حساب");
+define("CUSTDISCCALC","القرص. حساب");
+define("CUSTSERVCALC","خدمة حساب");
+define("CUSTDISCCALC","القرص. حساب");
+define("OTHERDETAILS","تفاصيل أخرى");
+define("CONTACTTHROUGH","الاتصال من خلال");
+define("LOCATIONCTRL","موقع السيطرة");
+define("PARENTCUST","الأم الزبون");
+define("EMPLOYEECODE","موظف قانون");
+define("CREDITDAYS","الائتمان أيام");
+define("AMOUNT","كمية");
+define("CONTACTNAME","اسم");
+define("CONTACTPHONE","هاتف");
+define("CONTACTMOBILE","المحمول");
+define("CONTACTEMAIL","البريد الإلكتروني");
+define("PARENTCUSTDETAILS","تفاصيل العملاء ماجستير");
+define("SUBCUSTDETAILS","تفاصيل أخرى");
+define("CUSTDETAILS","العميل تفاصيل");
+define("IDTYPE","معرف نوع");
+define("IDDETAILS","تفاصيل البائع");
+define("SERVAMT","خدمة المبلغ");
+define("DISCAMT","ديس المبلغ");
+define("ACCCODENAME","A اسم ج /");
+?>

@@ -1,0 +1,33 @@
+<?php
+define("ALLOCATIONREPORT","ALLOCATION REPORT");
+define("ADDNEWREFUND","Add New Refund Register");
+define("ADDREFUND","Add Refund Register");
+define("BACKTOREFUND","Back To Refund Register");
+define("RECEIVABLEALLOCATIONREPORT","Receivable Allocation Report");
+define("PAYABLEALLOCATIONREPORT","Payable Allocation Report");
+define("PAYABLERECONCILIATIONREPORT","Payable Reconciliation Report");
+define("BSPRECONCILIATIONREPORT","BSP Reconciliation Report");
+define("BANKRECONCILIATIONREPORT","Bank Reconciliation Report");
+define("AGEINGREPORT","AGEING REPORT");
+define("RECEIVABLEAGEING","Receivable Ageing");
+define("PAYABLEAGEING","Payable Ageing");
+define("RECEIVABLEWITHDETAILAGEING","Receivable With Detail Ageing");
+define("PAYABLEWITHDETAILAGEING","Payable With Detail Ageing");
+define("PARENTCUSTOMERAGEING","Parent Customer Ageing");
+define("SUBAGENTAGEING","Sub Agent Ageing");
+define("EMPLOYEECUSTOMERAGEING","Employee Customer Ageing");
+define("SUBAGENTWITHDETAILAGEING","Sub Agent With Detail Ageing");
+define("CASHBANKREGISTERY","CASH / BANK REGISTERY");
+define("TRANSACTIONTYPE","TRANSACTION TYPE");
+define("REGISTERREPORT","Register Report");
+define("TRANSACTIONREPORT","Transaction Report");
+define("BUDGETREPORT","Budget Report");
+define("ACTUALBUDGETREPORT","Actual Budget Report");
+define("OPENINGBALANCE","OPENING BALANCE");
+define("PLACCOUNTGROUPREPORT","P&L Account Group Report");
+define("PLACCOUNTHEADREPORT","P&L Account Head Report");
+define("MONTHLYPLREPORT","Monthly P&L Report");
+define("PROFITANDLOSS","PROFIT AND LOSS");
+define("ARAPALLOCATION","AR/AP Allocation");
+define("ALLOCATIONTYPE","Allocation Type");
+?>

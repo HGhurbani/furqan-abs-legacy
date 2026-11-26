@@ -1,0 +1,28 @@
+
+ALTER TABLE `tbl_CashReceiptDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_CashPaymentDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_BankBookDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_BankBookPaymentDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_CreditVoucherDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_DebitVoucherDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_JvDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_AcmEntry` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_AcmEntryDetails` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_AdmEntry` DROP `nAcAllocatedAmt`; 
+ALTER TABLE `tbl_AdmEntryDetails` DROP `nAcAllocatedAmt`; 
+
+
+ALTER TABLE `tbl_CreditVoucherDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3) NOT NULL DEFAULT '0' AFTER `nAmount`;
+
+ALTER TABLE `tbl_CashReceiptDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_CashPaymentDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_BankBookDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_BankBookPaymentDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_CreditVoucherDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_DebitVoucherDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_JvDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_AcmEntry` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `vAmountDC`;
+ALTER TABLE `tbl_AcmEntryDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+ALTER TABLE `tbl_AdmEntry` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `vAmountDC`;
+ALTER TABLE `tbl_AdmEntryDetails` ADD `nAcAllocatedAmt` DECIMAL(18,3)  AFTER `nAmount`;
+
